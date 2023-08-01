@@ -1,6 +1,7 @@
 package src.ch050;
 
 
+// 최대 최소 구하기
 public class MaxMin {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
