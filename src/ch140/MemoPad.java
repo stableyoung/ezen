@@ -24,7 +24,13 @@ public class MemoPad {
     }
 
     public void deleteMemo(String title) {
-        memos.removeIf(memo -> memo.getTitle().equals(title));
+        //memos.removeIf(memo -> memo.getTitle().equals(title));
+        for (Memo memo : memos) {
+            if (memo.getTitle().equals(title)) {
+                memos.remove(memo);
+                break;
+            }
+        }
     }
 
     public List<Memo> getMemos() {
