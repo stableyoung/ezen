@@ -1,6 +1,6 @@
 package src.ch030;
 
-public class Main {
+public class Arithmetic {
     public static void main(String[] args) {
         int num1 = 400;
         int num2 = 100;
