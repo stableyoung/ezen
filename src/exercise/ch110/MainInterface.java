@@ -7,3 +7,24 @@ public class MainInterface {
         myDog.makeSound();
     }
 }
+
+interface Runnable {
+    void run();
+}
+
+
+abstract class Animal {
+    abstract void makeSound();
+}
+
+class Dog extends Animal implements Runnable{
+    @Override
+    public void run() {
+        System.out.println("뛴다.");
+    }
+    @Override
+    void makeSound() {
+        System.out.println("멍멍");
+    }
+}
+
