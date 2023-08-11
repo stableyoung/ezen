@@ -9,7 +9,7 @@ public class MainRectangle {
         System.out.println("정사각형2 면적: " + square.getArea());  // 출력: 정사각형 면적: 25
 
         square = new Rectangle(10,5);
-        System.out.println("정사각형3 면적: " + square.getArea());  // 출력: 직사각형 면적: 50
+        System.out.println("직사각형3 면적: " + square.getArea());  // 출력: 직사각형 면적: 50
     }
 }
 
