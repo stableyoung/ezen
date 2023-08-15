@@ -33,3 +33,5 @@ class Square extends AbstractShape implements Drawable {
         System.out.println("사각형을 그립니다.");
     }
 }
+
+// class Circle ..

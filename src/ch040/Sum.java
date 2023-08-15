@@ -6,6 +6,8 @@ public class Sum {
         for(int i = 0; i <= 100; i++) {
             sum += i;
         }
+        // while..
+
         System.out.println("Sum: " + sum);
     }
 }

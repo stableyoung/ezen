@@ -28,3 +28,4 @@ class Dog extends Animal implements Runnable{
     }
 }
 
+// Class Human ..

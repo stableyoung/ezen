@@ -2,8 +2,8 @@ package src.ch030;
 
 public class Arithmetic {
     public static void main(String[] args) {
-        int num1 = 400;
-        int num2 = 100;
+        int num1 = 400; // ..
+        int num2 = 100; // ..
 
         int sum = num1 + num2;
         System.out.println("Sum: " + sum);
@@ -15,7 +15,6 @@ public class Arithmetic {
         System.out.println("Product: " + product);
 
         int quotient = num1 / num2;
-//        double quotient = (double) num1 / num2;
         System.out.println("Quotient: " + quotient);
 
         int remainder = num1 % num2;
