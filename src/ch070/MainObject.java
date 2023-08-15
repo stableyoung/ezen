@@ -13,6 +13,8 @@ class Person {
     String name;
     int age;
 
+    // 속성 추가..
+
     void introduce() {
         System.out.println("안녕하세요, 제 이름은 "+name+"이고, 나이는 "+age+"살 입니다.");
     }

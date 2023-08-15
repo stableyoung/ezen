@@ -32,3 +32,5 @@ class Bicycle extends Vehicle {
         System.out.println("자전거의 최대 속도: 30km/h");
     }
 }
+
+// MotorCycle 오트바이 클래스 추가..

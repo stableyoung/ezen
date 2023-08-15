@@ -32,3 +32,5 @@ class Banana extends Fruit{
         return "노란색";
     }
 }
+
+// Watermelon 수박 클래스 추가..

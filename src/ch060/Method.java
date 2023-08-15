@@ -6,6 +6,8 @@ public class Method {
         return sum;
     }
 
+    // multiplyNumbers()..
+
     public void displayMessage(String message) {
         System.out.println(message);
     }

@@ -22,6 +22,8 @@ class Parent {
 class Child extends Parent {
     String hobby;
 
+    // 특기 displacement 속성 추가
+
     Child(String name, String hobby) {
         super(name);  // 부모 클래스의 생성자 호출
         this.hobby = hobby;

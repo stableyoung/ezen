@@ -33,7 +33,7 @@ class Animal {
         System.out.println(name + "이(가) 소리를 낸다.");
     }
 
-    // getter와 setter
+    // getter 와 setter
     public String getName() {
         return name;
     }

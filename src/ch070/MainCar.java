@@ -21,6 +21,8 @@ class Car {
     String color;
     int speed;
 
+    // displacement 베기량 속성 추가
+
     void speedUp() {
         speed += 10;
     }

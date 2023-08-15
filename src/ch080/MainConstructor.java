@@ -12,6 +12,8 @@ class Book {
     String author;
     int pages;
 
+    // 내용 detail 속성 추가 ..
+
     public Book(String title, String author, int pages) {
         this.title = title;
         this.author = author;

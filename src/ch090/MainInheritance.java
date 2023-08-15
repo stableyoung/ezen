@@ -51,3 +51,5 @@ class Dog extends Animal {
         System.out.println(name+"의 품종은 "+breed+"입니다.");
     }
 }
+
+// Human Class..
