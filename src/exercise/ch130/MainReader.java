@@ -6,7 +6,7 @@ import java.io.FileReader;
 public class MainReader {
     public static void main(String[] args) {
         try {
-            FileReader fr = new FileReader("test.txt");
+            FileReader fr = new FileReader("test.old");
             BufferedReader br = new BufferedReader(fr);
 
             String line;

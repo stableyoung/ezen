@@ -4,7 +4,7 @@ package src.ch040;
 public class Prime {
     public static void main(String[] args) {
         for(int i = 2; i <= 100; i++) {
-            boolean isPrime = Prime.checkPrime(i);
+            boolean isPrime = Prime.checkPrime(i);  // 3, 5, 7,..
             if(isPrime) {
                 System.out.println(i);
             }

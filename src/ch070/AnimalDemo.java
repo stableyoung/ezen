@@ -2,6 +2,7 @@ package src.ch070;
 
 public class AnimalDemo {
     public static void main(String[] args) {
+/*
         // Animal 객체 생성
         Animal cat = new Animal("고양이", 3);
 
@@ -15,6 +16,15 @@ public class AnimalDemo {
         // 이름 변경
         cat.setName("나비");
         System.out.println("새로운 이름: " + cat.getName());
+*/
+        Animal dog = new Animal("강아지", 10);
+        dog.makeSound();
+
+        System.out.println("이름: " + dog.getName());
+        System.out.println("나이: " + dog.getAge() + "살");
+
+        dog.setName("뽀삐");
+        System.out.println("새로운 이름: " + dog.getName());
     }
 }
 

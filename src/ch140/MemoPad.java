@@ -2,7 +2,6 @@ package src.ch140;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class MemoPad {
     private List<Memo> memos;
 
@@ -15,8 +14,8 @@ public class MemoPad {
     }
 
     public Memo getMemo(String title) {
-        for (Memo memo : memos) {
-            if (memo.getTitle().equals(title)) {
+        for( Memo memo: memos ) {
+            if( memo.getTitle().equals(title) ) {
                 return memo;
             }
         }
@@ -24,11 +23,10 @@ public class MemoPad {
     }
 
     public void deleteMemo(String title) {
-        //memos.removeIf(memo -> memo.getTitle().equals(title));
-        for (Memo memo : memos) {
-            if (memo.getTitle().equals(title)) {
+        for( Memo memo: memos ) {
+            if( memo.getTitle().equals(title) ) {
                 memos.remove(memo);
-                break;
+                return;
             }
         }
     }

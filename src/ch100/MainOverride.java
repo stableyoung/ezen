@@ -10,6 +10,9 @@ public class MainOverride {
 
         fruit = new Banana();
         System.out.println(fruit.getColor());
+
+        fruit = new Watermelon();
+        System.out.println(fruit.getColor());
     }
 }
 
@@ -34,3 +37,10 @@ class Banana extends Fruit{
 }
 
 // Watermelon 수박 클래스 추가..
+
+class Watermelon extends Fruit{
+    @Override
+    String getColor() {
+        return "초록색";
+    }
+}

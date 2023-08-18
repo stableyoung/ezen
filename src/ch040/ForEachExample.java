@@ -8,6 +8,7 @@ public class ForEachExample {
         list.add("Hello");
         list.add("World");
         list.add("Good");
+        list.add("Morning");
 
         for (String s : list) {
             System.out.println(s);

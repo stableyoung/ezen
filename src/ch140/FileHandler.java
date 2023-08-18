@@ -3,36 +3,42 @@ package src.ch140;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
 public class FileHandler {
-    public void saveMemos(List<Memo> memos) {
+
+    public void saveMemos(List<Memo> memos)
+    {
         try {
-            FileOutputStream fos = new FileOutputStream("memos.ser");
+            FileOutputStream fos = new FileOutputStream("memo.dat");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(memos);
             oos.close();
             fos.close();
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
+        }
+        catch (IOException ex)
+        {
+            ex.printStackTrace();
         }
     }
 
-    public List<Memo> loadMemos() {
+    public List<Memo> loadMemos()
+    {
         List<Memo> memos = null;
         try {
-            FileInputStream fis = new FileInputStream("memos.ser");
+            FileInputStream fis = new FileInputStream("memo.dat");
             ObjectInputStream ois = new ObjectInputStream(fis);
-            memos = (ArrayList) ois.readObject();
+            memos = (List<Memo>)ois.readObject();
             ois.close();
             fis.close();
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-            return new ArrayList<>();
-        } catch (ClassNotFoundException c) {
-            System.out.println("Class not found");
+        } catch (IOException ex)
+        {
+            ex.printStackTrace();
+        } catch (ClassNotFoundException c)
+        {
+            System.out.println("Class Not Found");
             c.printStackTrace();
             return new ArrayList<>();
         }
+
         return memos;
     }
 }

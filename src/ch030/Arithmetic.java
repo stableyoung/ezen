@@ -2,8 +2,8 @@ package src.ch030;
 
 public class Arithmetic {
     public static void main(String[] args) {
-        int num1 = 400; // ..
-        int num2 = 100; // ..
+        int num1 = 100; // ..
+        int num2 = 30; // ..
 
         int sum = num1 + num2;
         System.out.println("Sum: " + sum);

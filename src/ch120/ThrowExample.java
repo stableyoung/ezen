@@ -17,9 +17,10 @@ public class ThrowExample {
 
     public static void main(String[] args) {
         try {
-            checkAge(15);   // 변경..
+            checkAge(10);   // 변경..
         } catch (AgeNotValidException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
+//            System.out.println(e.getMessage());
         }
     }
 }

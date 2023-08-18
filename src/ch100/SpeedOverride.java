@@ -10,6 +10,9 @@ public class SpeedOverride {
 
         vehicle = new Bicycle();
         vehicle.maxSpeed();
+
+        vehicle = new MotorCycle();
+        vehicle.maxSpeed();
     }
 }
 
@@ -30,6 +33,14 @@ class Bicycle extends Vehicle {
     @Override
     void maxSpeed() {
         System.out.println("자전거의 최대 속도: 30km/h");
+    }
+}
+
+class MotorCycle extends Vehicle {
+
+    @Override
+    void maxSpeed() {
+        System.out.println("오토바이의 최대 속도: 150km/h");
     }
 }
 

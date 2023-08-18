@@ -2,10 +2,13 @@ package src.ch070;
 
 public class MainCar {
     public static void main(String[] args) {
-       Car myCar = new Car();
+        Car myCar = new Car();
          myCar.name = "포르쉐";
          myCar.color = "빨강";
+         myCar.displacement = "4500cc";
 
+         myCar.speedUp();
+         myCar.speedUp();
          myCar.speedUp();
          myCar.speedUp();
          myCar.speedDown();
@@ -22,6 +25,7 @@ class Car {
     int speed;
 
     // displacement 베기량 속성 추가
+    String displacement;
 
     void speedUp() {
         speed += 10;
@@ -38,6 +42,7 @@ class Car {
     void print() {
         System.out.println("차종: " + name);
         System.out.println("색상: " + color);
+        System.out.println("배기량: " + displacement);
         System.out.println("속도: " + speed);
     }
 }

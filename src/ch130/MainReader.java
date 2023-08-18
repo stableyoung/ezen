@@ -1,7 +1,9 @@
 package src.ch130;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class MainReader {
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class MainReader {
                 System.out.println(line);
             }
             br.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -5,6 +5,10 @@ public class MainInterface {
         Dog myDog = new Dog();
         myDog.run();
         myDog.makeSound();
+
+        Human myHuman = new Human();
+        myHuman.run();
+        myHuman.makeSound();
     }
 }
 
@@ -28,4 +32,13 @@ class Dog extends Animal implements Runnable{
     }
 }
 
-// Class Human ..
+class Human extends Animal implements Runnable{
+    @Override
+    public void run() {
+        System.out.println("달린다.");
+    }
+    @Override
+    void makeSound() {
+        System.out.println("말한다.");
+    }
+}

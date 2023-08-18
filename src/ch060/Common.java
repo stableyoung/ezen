@@ -7,10 +7,10 @@ import java.util.Date;
 public class Common {
 
     public static void main(String[] args) {
-        Date d = stringToDate("2021-01-01", "yyyy-MM-dd");  //변경..
+        Date d = stringToDate("20230816", "yyyyMMdd");  //변경..
         System.out.println(d);
 
-        String s = dateToString(new Date(), "yyyy-MM-dd");  // 변경..
+        String s = dateToString(new Date(), "yyyy/MM/dd");  // 변경..
         System.out.println(s);
     }
 

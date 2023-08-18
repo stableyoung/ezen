@@ -17,13 +17,13 @@ public class MainType {
         long myLong = 10L;
         System.out.println("My Long is : " + myLong);
 
-        float myFloat = 10.0f;
+        float myFloat = 10.0F;
         System.out.println("My Float is : " + myFloat);
 
-        double myDouble = 10.0d;
+        double myDouble = 10.0D;
         System.out.println("My Double is : " + myDouble);
 
-        char myChar = 'A';
+        char myChar = '정';
         System.out.println("My Char is : " + myChar);
 
         boolean myBoolean = true;
@@ -33,7 +33,10 @@ public class MainType {
         String myString = "Hello World!";
         System.out.println("My String is : " + myString);
 
-        // Date ..
+        // Date
+        Date myDate = new Date();
+        System.out.println("My Date is : " + myDate);
+
     }
 }
 

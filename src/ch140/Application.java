@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Application {
     private static final MemoPad memoPad = new MemoPad();
+
     private static final FileHandler fileHandler = new FileHandler();
 
     public static void main(String[] args) {
@@ -13,10 +14,10 @@ public class Application {
 
     public static void start() {
         Scanner scanner = new Scanner(System.in);
-        String command;
+        String command = "";
 
-        while (true) {
-            System.out.println("메모장 프로그램입니다. 명령어를 입력해주세요(add, get, delete, save, load, quit): ");
+        while(true) {
+            System.out.println("메모장 프로그램입니다. 명령어를 입력해주세요(add, get, delete, save, load, quit)");
             command = scanner.nextLine();
 
             switch (command) {
@@ -27,37 +28,42 @@ public class Application {
                     memoPad.addMemo(new Memo(title, content, LocalDateTime.now()));
                     break;
                 case "get":
-                    System.out.println("조회할 메모의 제목을 입력하세요: ");
+                    System.out.println("메모 제목을 입력하세요: ");
                     title = scanner.nextLine();
                     Memo memo = memoPad.getMemo(title);
-                    if(memo != null){
-                        System.out.println("메모 제목: " + memo.getTitle() + "\n메모 내용: " + memo.getContent());
+                    if( memo != null ) {
+                        System.out.println("메모제목: " + memo.getTitle() + "\n 메모 네용: " + memo.getContent());
                     } else {
-                        System.out.println("해당 제목의 메모가 존재하지 않습니다.");
+                        System.out.println("해당 제목의 메모가 없습니다.");
                     }
                     break;
                 case "delete":
-                    System.out.println("삭제할 메모의 제목을 입력하세요: ");
+                    System.out.println("메모 제목을 입력하세요: ");
                     title = scanner.nextLine();
                     memoPad.deleteMemo(title);
                     break;
                 case "save":
                     fileHandler.saveMemos(memoPad.getMemos());
-                    System.out.println("메모를 파일에 저장했습니다.");
+                    System.out.println("메모를 저장했습니다.");
                     break;
                 case "load":
                     memoPad.getMemos().clear();
                     memoPad.getMemos().addAll(fileHandler.loadMemos());
-                    System.out.println("파일에서 메모를 불러왔습니다.");
+                    System.out.println("메모를 불러왔습니다.");
                     break;
                 case "quit":
                     System.out.println("프로그램을 종료합니다.");
                     scanner.close();
                     System.exit(0);
+                    return;
                 default:
-                    System.out.println("유효하지 않은 명령어입니다. 다시 입력해주세요.");
+                    System.out.println("잘못된 명령어입니다. 다시 입력해주세요?");
+                    break;
             }
-        }
-    }
 
+        }
+
+
+
+    }
 }
